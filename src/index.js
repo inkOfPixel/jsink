@@ -1,7 +1,9 @@
 import _deepMerge from "./deepMerge";
 
-export default const jsink = {
+const jsink = {
 	deepMerge: _deepMerge
 }
+
+export default jsink;
 
 export let deepMerge = _deepMerge;
