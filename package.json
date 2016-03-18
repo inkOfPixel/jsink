@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/inkOfPixel/jsink/issues"
   },
-  "homepage": "https://github.com/inkOfPixel/jsink#readme"
+  "homepage": "https://github.com/inkOfPixel/jsink#readme",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "webpack": "^1.12.14"
+  }
 }
