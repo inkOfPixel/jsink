@@ -7,3 +7,7 @@ const jsink = {
 export default jsink;
 
 export let deepMerge = _deepMerge;
+
+if (window !== undefined) {
+	window.jsink = jsink;
+}
