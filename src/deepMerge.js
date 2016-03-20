@@ -1,5 +1,3 @@
-export default _deepMerge;
-
 function _deepMerge(a, b) {
 	if (a === undefined) {
 		return clone(b);
@@ -76,3 +74,5 @@ function isArray(a) {
 function isPrimitiveType(a) {
 	return !isObject(a) && !isArray(a);
 }
+
+export default _deepMerge;
