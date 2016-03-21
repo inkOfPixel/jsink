@@ -1,12 +1,13 @@
+const webpack = require("webpack");
+const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require("path");
 const libraryName = "jsink";
-const outputFile = libraryName + ".js";
+const outputFile = libraryName + ".min.js";
 
 module.exports = {
 	entry: {
 		jsink: __dirname + "/src/index.js"
 	},
-	devtool: "source-map",
 	output: {
 		path: __dirname + "/lib",
 		filename: outputFile,
@@ -32,5 +33,7 @@ module.exports = {
 		root: path.resolve("./src"),
 		extensions: ["", ".js"]
 	},
-	debug: true
+	plugins: [
+		new UglifyJsPlugin({minimize: true})
+	]
 };
