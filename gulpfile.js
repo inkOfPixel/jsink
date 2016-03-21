@@ -18,10 +18,9 @@ function onBuild(done) {
 	return function (error, stats) {
 		if (error) {
 			throw new gutil.PluginError("webpack", error);
-		} else {
-			gutil.log("[webpack]", stats.toString({
-				// output options
-			}));
+		}
+		if (stats.compilation.errors.length) {
+			throw new gutil.PluginError("webpack", stats.toString());
 		}
 		if (typeof done === "function") {
 			done();
