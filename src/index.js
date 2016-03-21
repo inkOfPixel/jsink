@@ -8,6 +8,15 @@ export default jsink;
 
 export let deepMerge = _deepMerge;
 
-if (window !== undefined) {
-	window.jsink = jsink;
-}
+!function () {
+	if (typeof define === "function" && define.amd) {
+		this.jsink = jsink;
+		define(jsink);
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = jsink;
+	}
+	else {
+		this.jsink = jsink;
+	}
+
+} ();
