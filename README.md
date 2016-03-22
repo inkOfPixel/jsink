@@ -2,3 +2,23 @@
 A library with useful Javascript extensions.
 
 > Note: this library is not ready to depend on.
+
+## Installation
+
+Use with [npm](http://npmjs.com):
+
+```sh
+npm install jsink --save
+```
+
+## Reference
+
+```javascript
+deepMerge(a: Any, b: Any)
+```
+deeply merges a and b.
+
+```javascript
+uuid()
+```
+Generates a uuid.
