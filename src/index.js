@@ -1,9 +1,9 @@
-import _deepMerge from "./deepMerge";
-
 const jsink = {
-	deepMerge: _deepMerge
+	deepMerge: require("./deepMerge").default,
+	uuid: require("./uuid").default
 }
 
 export default jsink;
 
-export let deepMerge = _deepMerge;
+export let deepMerge = jsink.deepMerge;
+export let uuid = jsink.uuid;
