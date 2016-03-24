@@ -21,6 +21,10 @@ function onBuild(done) {
 		}
 		if (stats.compilation.errors.length) {
 			throw new gutil.PluginError("webpack", stats.toString());
+		} else {
+			gutil.log("[webpack]", stats.toString({
+				// output options
+			}));
 		}
 		if (typeof done === "function") {
 			done();

@@ -33,6 +33,7 @@
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
     "jest-cli": "^0.9.2",
+    "json-loader": "^0.5.4",
     "webpack": "^1.12.14"
   }
 }
