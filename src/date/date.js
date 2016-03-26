@@ -1,7 +1,7 @@
 import dateJSON from "./date.json";
 
 export default {
-	areSameDay: _areSameDay,
+	areSameDate: _areSameDate,
 	isDate: _isDate,
 	monthName: _monthName
 }
@@ -27,8 +27,11 @@ function _isDate(o) {
 	return Object.prototype.toString.call(o) === "[object Date]";
 }
 
-function _areSameDay(a, b) {
-	return a.getFullYear() === b.getFullYear()
-		&& a.getMonth() === b.getMonth()
-		&& a.getDate() === b.getDate();
+function _areSameDate(a, b) {
+	if (_isDate(a) && _isDate(b)) {
+		return a.getFullYear() === b.getFullYear()
+			&& a.getMonth() === b.getMonth()
+			&& a.getDate() === b.getDate();
+	}
+	return false;
 }

@@ -24,7 +24,7 @@ deeply merges a and b.
 ### Date
 
 ```javascript
-areSameDay(a: Date, b: Date)
+areSameDate(a: Date, b: Date)
 ```
 Returns true if `a` and `b`represents the same day (same day of same month of same year).
 
