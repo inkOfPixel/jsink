@@ -1,6 +1,6 @@
 {
   "name": "jsink",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A library with useful Javascript extensions.",
   "main": "lib/jsink.js",
   "scripts": {
