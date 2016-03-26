@@ -1,8 +1,9 @@
 import dateJSON from "./date.json";
 
 export default {
-	monthName: _monthName,
-	isDate: _isDate
+	areSameDay: _areSameDay,
+	isDate: _isDate,
+	monthName: _monthName
 }
 
 function _monthName(date, locale) {
@@ -24,4 +25,10 @@ function _monthName(date, locale) {
 
 function _isDate(o) {
 	return Object.prototype.toString.call(o) === "[object Date]";
+}
+
+function _areSameDay(a, b) {
+	return a.getFullYear() === b.getFullYear()
+		&& a.getMonth() === b.getMonth()
+		&& a.getDate() === b.getDate();
 }
