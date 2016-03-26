@@ -29,9 +29,9 @@ function _isDate(o) {
 
 function _areSameDate(a, b) {
 	if (_isDate(a) && _isDate(b)) {
-		return a.getFullYear() === b.getFullYear()
-			&& a.getMonth() === b.getMonth()
-			&& a.getDate() === b.getDate();
+		return a.getUTCFullYear() === b.getUTCFullYear()
+			&& a.getUTCMonth() === b.getUTCMonth()
+			&& a.getUTCDate() === b.getUTCDate();
 	}
 	return false;
 }
