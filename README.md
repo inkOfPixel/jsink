@@ -26,7 +26,7 @@ deeply merges a and b.
 ```javascript
 areSameDate(a: Date, b: Date)
 ```
-Returns true if `a` and `b`represents the same day (same day of same month of same year).
+Returns true if `a` and `b`represents the same date (same day of same month of same year).
 
 ```javascript
 isDate(a: Any)
